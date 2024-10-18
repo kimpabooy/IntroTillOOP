@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace IntroTillOOP
+﻿namespace IntroTillOOP
 {
     internal class Circle
     {
@@ -18,7 +11,7 @@ namespace IntroTillOOP
         }
         public double GetArea() 
         {
-            return _pi;
+            return _radius * _radius * _pi;
         }
         
     }
