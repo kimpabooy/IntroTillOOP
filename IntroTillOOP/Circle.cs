@@ -1,4 +1,6 @@
-﻿namespace IntroTillOOP
+﻿using System;
+
+namespace IntroTillOOP
 {
     internal class Circle
     {
@@ -13,6 +15,13 @@
         {
             return _radius * _radius * _pi;
         }
-        
+        public double Circumference()
+        {
+            return _radius * _pi;
+        }
+        public double Volumme()
+        {
+            return _pi * _radius * _radius * (_radius / 2);
+        }
     }
 }
