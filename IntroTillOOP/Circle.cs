@@ -4,7 +4,6 @@ namespace IntroTillOOP
 {
     internal class Circle
     {
-        private double _pi = Math.PI;
         private int _radius;
 
         public Circle(int radius)
@@ -13,15 +12,15 @@ namespace IntroTillOOP
         }
         public double GetArea() 
         {
-            return _radius * _radius * _pi;
+            return Math.PI * Math.Pow(_radius, 2); // Arean Cirkel = π * r^2
         }
         public double Circumference()
         {
-            return _radius * _pi;
+            return 2 * Math.PI * _radius; // Omkrets Cirkel = 2π * r
         }
         public double Volumme()
         {
-            return _pi * _radius * _radius * (_radius / 2);
+            return (4 * Math.PI) * (Math.Pow(_radius, 3)) / 3; // Volym sfär = 4π * r^3 / 3
         }
     }
 }
